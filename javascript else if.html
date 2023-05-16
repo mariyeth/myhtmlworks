@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script language="javascript">
+            function checkNumber()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                if (a==1)
+                {
+                  alert("one");
+                }
+                else if(a==2)
+                {
+                    alert("two");
+                }
+                else if(a==3)
+                {
+                    alert("three");
+                }
+            
+            else alert("wrong");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="n1" placeholder="enter number"><br>
+            <input type="button" value="check number" onclick="checkNumber()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script language="javascript">
+            function myfunload()
+            {
+                alert("body load");
+            }
+            function myfunchanged()
+            {
+                alert("changed");
+            }
+            function myfunclicked()
+            {
+                alert("clicked");
+            }
+        </script>
+    </head>
+    <body onload="myfunload()">
+    <form>
+        Name<input type="text" id="txtname" placeholder="enter name" onchange="myfunchanged()" onmouseout="myfunmouseout()" onkeydown="myfunkeydown()">
+        <input type="button" value="click" onclick="myfunclicked()">
+        <p onmouseover="myfunmouseover()"> no data here..</p>
+    </form></body>
+</html>
