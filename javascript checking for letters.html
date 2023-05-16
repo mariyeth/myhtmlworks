@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script language="javascript">
+            function letters(elem,msg)
+            {
+                var letters=/^[a-zA-Z]+$/;
+                if (elem.value.match(letters)) 
+                {
+                         alert("congrats...you are typing letters");
+                }
+                else 
+                {
+                    alert(msg);
+                    elem.focus();
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        Letters <input type="text" id="txtna">
+        <input type="button" value="click" onclick="letters(document.getElementById('txtna'),'Letters only please')">
+        </form>
+    </body>
+</html>
